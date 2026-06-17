@@ -2,7 +2,7 @@ import mysql.connector
 from db_config import get_connection
 
 def criar_banco_e_tabelas():
-    conn_inicial = mysql.connector.connect(host="localhost", user="root", password="crud")
+    conn_inicial = mysql.connector.connect(host="localhost", user="root", password="")
     cursor_inicial = conn_inicial.cursor()
     cursor_inicial.execute("CREATE DATABASE IF NOT EXISTS empresa_flores;")
     cursor_inicial.close()
