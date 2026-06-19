@@ -1,9 +1,4 @@
-import sys
-import os
-# Adiciona o diretório raiz ao caminho do sistema para permitir a importação do módulo de banco de dados
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from DB.db_config import get_connection
+from MySql.db_config import get_connection
 
 def inserir_cliente():
     # Solicita os dados do cliente via terminal e realiza a inserção na tabela Clien
